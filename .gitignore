@@ -6,8 +6,8 @@ __pycache__/
 venv/
 .venv/
 
-# Data (raw downloads — keep only cleaned CSVs)
-data/raw/
+# Data — zip archives (keep extracted xlsx and cleaned CSVs only)
+data/*.zip
 
 # OS
 .DS_Store
