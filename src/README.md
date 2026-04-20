@@ -17,22 +17,3 @@ This folder contains all source code for the Group 7 Streamlit dashboard.
 **Dhrishita** — Dashboard Developer: `app.py`, `pages/`, `utils/`  
 **Desmond** — Data Analyst: `clean.py` (produces cleaned CSVs loaded by the dashboard)
 
-## How to run
-
-```bash
-# From the repo root
-pip install -r requirements.txt
-
-# Step 1: clean the raw ABS data (run once)
-python src/clean.py
-
-# Step 2: launch the dashboard
-streamlit run src/app.py
-```
-
-## Coding conventions
-
-- Every `pd.read_excel()` or `pd.read_csv()` call must include a comment naming the ABS table number and what it contains.
-- Every data transformation (melts, pivots, derived columns) must include a one-line comment explaining *why*, not just what.
-- Chart functions should be self-contained — take a DataFrame in, return a Plotly figure out.
-- See `example.py` for a working reference of these conventions.
