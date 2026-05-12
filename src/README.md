@@ -9,6 +9,7 @@ This folder contains all source code for the Group 7 Streamlit dashboard.
 | `app.py` | Main Streamlit entry point — run this to launch the dashboard |
 | `example.py` | Annotated walkthrough of coding conventions (not part of live dashboard) |
 | `clean.py` | Data cleaning script — reads raw xlsx from `../data/`, outputs cleaned CSVs |
+| `Preferences.tps` | Tableau custom colour palettes — install per `docs/DESIGN_SYSTEM.md` §4.1 |
 | `pages/` | (optional) Additional Streamlit pages if multi-page layout is used |
 | `utils/` | (optional) Helper modules for chart builders and shared transforms |
 

@@ -25,9 +25,11 @@ This project visualises ABS CPI data to help [Persona: input after confirming] u
 DVN_Group7_Library/
 ├── README.md                  # Project overview, setup, credits
 ├── docs/
-│   └── DATA_DICTIONARY.md     # Variable definitions, types, and provenance
+│   ├── DATA_DICTIONARY.md     # Variable definitions, types, and provenance
+│   └── DESIGN_SYSTEM.md       # Palette, typography, Tableau formatting rules
 ├── data/                      # Cleaned CSV files (derived from ABS releases)
 ├── src/                       # Streamlit application source code
+│   └── Preferences.tps        # Tableau custom colour palettes (install per design system)
 └── .gitignore
 ```
 
@@ -64,6 +66,14 @@ streamlit run app.py
 | **URL**              | https://www.abs.gov.au/statistics/economy/price-indexes-and-inflation/consumer-price-index-australia/latest-release |
 
 For full variable definitions, data types, units, and transformation notes, see [docs/DATA_DICTIONARY.md](docs/DATA_DICTIONARY.md).
+
+---
+
+## Design System
+
+All visual decisions for the dashboard — colour palettes, typography, Tableau formatting rules, chart-specific guidelines, and accessibility standards — are defined in [docs/DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md). The companion file [src/Preferences.tps](src/Preferences.tps) provides the custom Tableau colour palettes referenced in that document; install instructions are in §4.1.
+
+Use the design system as the single source of truth before authoring or modifying any visual.
 
 ---
 
